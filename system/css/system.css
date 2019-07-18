@@ -1,0 +1,126 @@
+.body {
+	transform-style: preserve-3d;
+	perspective: 500px;
+	perspective-origin: center;
+}
+
+.head {
+	width: 100%;
+	height: 50px;
+	background: deepskyblue;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	position: relative;
+	min-width: 728px;
+}
+.denglu{
+	width: 30%;
+	height: 50px;
+	font-size: 16px;
+	position: absolute;
+	top: 0;
+	right: 40px;
+}
+.tuichu{
+	width: 100px;
+	height: 50px;
+	font-size: 16px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.manager>div {
+	display: none;
+}
+
+.manager>.on {
+	display: block;
+}
+
+
+/*图片展示界面*/
+
+
+/*删除确认*/
+
+.sure {
+	width: 300px;
+	height: 136px;
+	border: 1px solid deepskyblue;
+	background: skyblue;
+	opacity: 0.3;
+	position: fixed;
+	left: 37%;
+	top: 35%;
+	z-index: 999;
+	display: none;
+}
+
+.sure>p {
+	margin-top: 20px;
+	font-size: 25px;
+	color: deeppink;
+}
+
+.yes {
+	width: 50px;
+	height: 30px;
+	background: red;
+}
+
+.no {
+	margin-left: 194px;
+	width: 50px;
+	height: 30px;
+	background: gray;
+}
+
+.table {
+	text-align: center;
+	border: 1px solid #ddd !important;
+}
+
+.table th {
+	text-align: center;
+}
+
+.box .table td {
+	vertical-align: middle;
+}
+
+
+/*用户界面*/
+
+.usersure {
+	width: 300px;
+	height: 136px;
+	border: 1px solid deepskyblue;
+	background: skyblue;
+	opacity: 0.3;
+	position: fixed;
+	left: 32%;
+	top: 15%;
+	z-index: 999;
+	display: none;
+}
+
+.usersure>p {
+	margin-top: 20px;
+	font-size: 25px;
+	color: deeppink;
+}
+
+.useryes {
+	width: 50px;
+	height: 30px;
+	background: red;
+}
+
+.userno {
+	margin-left: 194px;
+	width: 50px;
+	height: 30px;
+	background: gray;
+}

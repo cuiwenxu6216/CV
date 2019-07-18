@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>视觉中国后台登录管理系统</title>
+		<link rel="Shortcut Icon" href="../source/img/主页图片/icon-shijue.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/system.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<!--头部-->
+			<div class="head">
+				视觉中国简陋的后台管理系统
+				<div class="denglu">
+					18392021969
+				</div>
+				<div class="tuichu">
+					退出登录
+				</div>
+			</div>
+
+			<!--下半部分-->
+			<div class="row">
+
+				<!--菜单栏-->
+				<div class="col-xs-12 col-sm-3 manager-btn">
+					<button class="btn btn-success btn-block btn-danger" date-class="box">图片管理</button>
+					<button class="btn btn-success btn-block"id="guanlibtn" date-class="userManager">用户管理</button>
+				</div>
+
+				<!--内容展示-->
+				<div class="col-xs-12 col-sm-9 manager">
+					<!--图片管理-->
+					<div class="box on table-responsive">
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>名称</th>
+								<th>图片</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+						<td>记不住</td>
+						<td><img src="../source/img/主页图片/3.4.jpg" alt="" /></td>
+						<td>
+							<div class="sure">
+								<p> 你删一个试试！别后悔！</p>
+								<button class="yes">是</button>
+								<button class="no">否</button>
+							</div>
+							<button class="btn-info">修改</button>
+							<button class="btn-warning">删除</button>
+						</td>
+					</tr>-->
+						</table>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加商品</button>
+					</div>
+
+					<!--用户管理-->
+					<div class="userManager table-responsive" id="guanli">
+
+						<table class="table table-striped table-bordered">
+							<tr>
+								<th>账号</th>
+								<th>密码</th>
+								<th>操作</th>
+							</tr>
+							<!--<tr>
+								<td>18392021969</td>
+								<td>C123456</td>
+								<td>
+									<div class="usersure">
+										<p> 你删一个试试！别后悔！</p>
+										<button class="useryes">是</button>
+										<button class="userno">否</button>
+									</div>
+									<button class="btn-info">修改</button>
+									<button class="btn-warning">删除</button>
+								</td>
+							</tr>-->
+						</table>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#modal3">添加用户</button>
+					</div>
+				</div>
+				<!--内容展示-->
+			</div>
+			<!--下半部分-->
+		</div>
+
+		</div>
+		<!-- 添加图片模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">添加商品</h4>
+					</div>
+					<div class="modal-body">
+						<!--表单内容-->
+						<form>
+							<div class="form-group">
+								<label>名称:</label>
+								<input type="text" class="form-control" id="iname" />
+							</div>
+							<div class="form-group">
+								<label>图片:</label>
+								<input type="text" class="form-control" id="iImg" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" id="subImg" data-dismiss="modal">添加</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<!--  图片修改模态框 -->
+		<div class="modal fade" id="changeModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<!-- 模态框头部 -->
+					<div class="modal-header">
+						<h4 class="modal-title">你可以在这里做适当修改</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- 模态框主体 -->
+					<!--表单内容-->
+					<form>
+						<div class="form-group">
+							<label>名称:</label>
+							<input type="text" class="form-control" id="changeName" />
+						</div>
+						<div class="form-group">
+							<label>图片路径:</label>
+							<input type="text" class="form-control" id="changeImg" />
+						</div>
+					</form>
+
+					<!-- 模态框底部 -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" id="subChange" data-dismiss="modal">提交修改</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--  用户信息添加模态框 -->
+		<div class="modal fade" id="modal3">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<!-- 模态框头部 -->
+					<div class="modal-header">
+						<h4 class="modal-title">你可以在这里做适当修改</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- 模态框主体 -->
+					<!--表单内容-->
+					<form>
+						<div class="form-group">
+							<label>手机账号:</label>
+							<input type="text" class="form-control" id="phone1" />
+						</div>
+						<div class="form-group">
+							<label>密码:</label>
+							<input type="text" class="form-control" id="pswd1" />
+						</div>
+					</form>
+
+					<!-- 模态框底部 -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" id="subUser" data-dismiss="modal">确认添加</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		<!--用户信息修改模态框-->
+		<div class="modal fade" id="modal4">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<!-- 模态框头部 -->
+					<div class="modal-header">
+						<h4 class="modal-title">你可以在这里做适当修改</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- 模态框主体 -->
+					<!--表单内容-->
+					<form>
+						<div class="form-group">
+							<label>手机账号:</label>
+							<input type="text" class="form-control" id="phone2" />
+						</div>
+						<div class="form-group">
+							<label>密码:</label>
+							<input type="text" class="form-control" id="pswd2" />
+						</div>
+					</form>
+
+					<!-- 模态框底部 -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" id="subUser2" data-dismiss="modal">确认修改</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript " src="../public/js/jquery-3.2.1.min.js "></script>
+	<script type="text/javascript " src="../public/js/bootstrap.min.js "></script>
+	<script type="text/javascript" src="js/system.js"></script>
+
+</html>

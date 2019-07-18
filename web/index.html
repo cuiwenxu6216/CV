@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>视觉中国-首页</title>
+		<link rel="Shortcut Icon"  href="../source/img/主页图片/icon-shijue.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../public/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid container-fluid1">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+            				<span class="sr-only">切换导航</span>
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+        				</button>
+					<a class="navbar-brand" href="#"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#" class="active">首页</a>
+						</li>
+						<li>
+							<a href="#">创意图片</a>
+						</li>
+						<!--编辑图片的下拉导航-->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle " data-toggle="dropdown">
+								编辑图片 </a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">专题汇总</a>
+								</li>
+								<li>
+									<a href="#">bettmann专区</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">视频素材</a>
+						</li>
+						<li>
+							<a href="#">音乐素材</a>
+						</li>
+						<li>
+							<a href="#">增值服务</a>
+						</li>
+						<li>
+							<a href="#">供稿人登录</a>
+						</li>
+					</ul>
+					<!--导航右-->
+					<div class="navbar-form navbar-right row navbar-default">
+						<a href="#" class="navbar-link col-xl-8 col-lg-4" style="margin-right: 30px;"><i class="glyphicon glyphicon-earphone">40012345</i> </a>
+						<a href="login.html" class="navbar-link col-xl-2 col-lg-4" style="margin-right: -30px;">登陆</a>
+						<a href="#" class="navbar-link col-xl-2 col-lg-4">注册</a>
+					</div>
+				</div>
+		</nav>
+		
+		<!--搜索框-->
+		<div class="input-group col-md-10 serchbox" style="margin:0 auto;">
+			<input type="text" class="form-control" placeholder="请输ID 或关键字查询" />
+			<span class="input-group-btn">
+					<!--有下拉的按钮-->
+			
+               <button class="btn btn-info btn-search" style="background: white;">
+               	<li class="dropdown">
+							<a href="#" class="dropdown-toggle " data-toggle="dropdown">
+								创意图片 <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">创意图片</a>
+								</li>
+								<li>
+									<a href="#">编辑图片</a>
+								</li>
+								<li>
+									<a href="#">视频素材</a>
+								</li>
+							</ul>
+						</li>
+               </button>  
+               
+               <button class="btn btn-info btn-search" style="margin-left:3px;background: red;"><i class="glyphicon glyphicon-search"></i>搜索</button>  
+            </span>
+		</div>
+
+		<!--轮播图-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="img1">
+						<img src="../source/img/主页图片/lunbo1.jpg" alt="" />
+						<div class="mask"></div>
+						<span> 哪有什么岁月静好，只是有人负重前行</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="img1">
+						<img src="../source/img/主页图片/lunbo01.jpg" alt="" />
+						<div class="mask"></div>
+						<span> 最无助的就是在灾难来临时我无法保护你，我的宝贝....</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="img1">
+						<img src="../source/img/主页图片/lunbo2.jpg" alt="" />
+						<div class="mask"></div>
+						<span> XAH171003的各位帅哥美女，希望新的一年里，大家都能心想事成，提前祝大家新年快乐!</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="img1">
+						<img src="../source/img/主页图片/lunbo3.jpg" alt="" />
+						<div class="mask"></div>
+						<span> ....................</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="img1">
+						<img src="../source/img/主页图片/lunbo4.jpg" alt="" />
+						<div class="mask"></div>
+						<span> 烟笼寒水月笼沙，夜泊秦淮近酒家</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="img1">
+						<img src="../source/img/主页图片/lunbo5.jpg" alt="" />
+						<div class="mask"></div>
+						<span> ....................</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="img1">
+						<img src="../source/img/主页图片/lunbo6.jpg" alt="" />
+						<div class="mask"></div>
+						<span> 过去的终将过去，一切向前看，新年快乐</span>
+					</div>
+				</div>
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		<!--相关介绍-->
+		<div class="container container2">
+			<div class="row" style="text-align: center;">
+				<!--菜单-->
+				<div class="col-xs-12 intro-btn" margin: 0 auto; ">
+					<span class="col-xs-12 col-sm-3 " style="background: black;opacity: 0; ">kong</span>
+					<button class="col-xs-12 col-sm-2 dianji1 btn btn-primary btn-danger " date-class="intro ">视觉中国先关介绍下载</button>
+					<button class="col-xs-12 col-sm-2 dianji2 btn btn-primary " date-class="visioncontent ">汇聚全球高端视觉内容</button>
+					<button class="col-xs-12 col-sm-2 dianji3 btn btn-primary " date-class="viewserve ">视觉相关服务</button>
+					<span class="col-xs-12 col-sm-1 " style="background: black; opacity: 0; ">kong</span>
+					<span class="col-xs-12 col-sm-2 " style="background: black; opacity: 0; ">kong</span>
+				</div>
+			</div>
+		</div>
+		<!--介绍内容-->
+		<div class="container-fluid ">
+			<div class="row ">
+				<div class="col-xs-12 introduce ">
+					<!--介绍-->
+					<div class="intro table-responsive on " >
+						<table class="table table-bordered ">
+							<tr>
+								<td style="vertical-align: middle; ">
+									<img style="widows: 150px;height: 100px; " src="../source/img/主页图片/intro1-1.jpg " alt=" " />
+								</td>
+								<td style="vertical-align: middle; ">
+									<h5>视觉中国简介</h5>
+									<p>视觉中国是一家国际知名的以“视觉内容”为核心的互联网科技文创公司，公司整合全球优质版权内容资源，为内容生态中的生产者与使用者提供全方位的版权交易和增值服务。点击这里下载最新集团介绍PPT。</p>
+								</td>
+								<td style="vertical-align: middle; ">
+									<img style="widows: 150px;height: 100px; " src="../source/img/主页图片/intro1-2.jpg " alt=" " />
+								</td>
+								<td style="vertical-align: middle; ">
+									<h5>全部图片找图指南</h5>
+									<p>视觉中国互联网版权交易平台自上线以来持续为用户提供优质的服务，为了使用户体验更高效、更智能、更人性化的“一站式”视觉内容，视觉中国推出《找图指南》，帮助用户更好的浏览平台内容。点击这里下载最新找图指南。</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--汇聚全球高端视觉内容-->
+					<div class="visioncontent table-responsive ">
+						<table class="table table-bordered ">
+
+							<tr>
+								<td>
+									<h5>创意图片</h5>
+									<img src="../source/img/主页图片/tab5.png " alt=" " /></td>
+								<td>
+									<td>
+										<h5>编辑图片</h5>
+										<img src="../source/img/主页图片/tab6.png " alt=" " /></td>
+								</td>
+								<td>
+									<td>
+										<h5>历史档案</h5>
+										<img src="../source/img/主页图片/tab7.jpg " alt=" " /></td>
+								</td>
+								<td>
+									<td>
+										<h5>视频素材</h5>
+										<img src="../source/img/主页图片/tab8.png " alt=" " /></td>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--相关视觉服务-->
+					<div class="viewserve table-responsive ">
+						<table class="table table-bordered ">
+							<tr>
+								<td>
+									<img src="../source/img/主页图片/tab1.png " alt=" " />
+								</td>
+								<td>
+									<h5>商业委托拍摄</h5>
+									<p>视觉中国增加了平面委托拍摄业务，自业务开展以来，致力于客户享受一站式服务，从而解决了客户多家供应商、多方面联系渠道的需求。</p>
+								</td>
+								<td>
+									<img src="../source/img/主页图片/tab2.png " alt=" " />
+								</td>
+								<td>
+									<h5>权利清除服务</h5>
+									<p>
+										我们遍布全球各地的律师团队，以及丰富、紧密的经纪公司资源，让您在更短的时间以更经济的价格获得有保障的权利清除服务。
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--图片展示-->
+		<div class="container container3 ">
+			<div class="row ">
+				<!--<div class="col-xs-12 col-sm-6 col-md-3 ">
+					<img src="../source/img/主页图片/3.8.jpg " alt=" " />
+					<p>色彩</p>
+				</div>-->
+			</div>
+		</div>
+	</div>
+	<div class="foot ">
+		<div class="container container4 ">
+			<!--上-->
+			<div class="row topbox ">
+				<div class="box1 col-xs-6 col-md-3 ">
+					<div>
+						<h5>业务介绍</h5></div>
+					<div>创意图片</div>
+					<div>编辑图片</div>
+					<div>视频素材</div>
+					<div>音乐素材</div>
+					<div>视觉中国API</div>
+					<div>服务</div>
+					<div>品牌社区</div>
+					<div>品牌列表</div>
+				</div>
+				<div class="box2 col-xs-6 col-md-3 ">
+					<div>
+						<h5>其他网站</h5></div>
+					<div>集团网站</div>
+					<div>设计社区</div>
+					<div>摄影社区</div>
+					<div>东星娱乐</div>
+				</div>
+				<div class="box3 col-xs-6 col-md-3 ">
+					<div>
+						<h5>供稿人专区</h5></div>
+					<div>供稿人注册</div>
+					<div>编辑类供稿人登录</div>
+				</div>
+				<div class="box4 col-xs-6 col-md-3 ">
+					<div>
+						<h5>社交媒体</h5></div>
+					<div class="wx">
+						<div class="weixinbox" style="border: 1px solid gray;border-radius: 15px;">
+							<p style="float: left;margin-left: 34px;">视觉中国微信</p>
+							<img style="margin-right: 20px;" class="footimg2" src="../source/img/主页图片/wechat3.jpg" alt="" />
+							
+						</div>
+							<div class="weixin" style="border: 1px solid gray;border-radius: 20px;">
+								<p style="display: block;width: 100px; margin-left: 3px;"> 视觉中国微信</p>
+								<img style="width: 100px;margin-left: -5px;padding: 10px;" src="../source/img/主页图片/wechat3.jpg"" alt="" />
+							</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--下-->
+			<div class="bottombox">
+				<div>
+					<span>关于我们</span>
+					<span>新闻中心</span>
+					<span>投资者关系</span>
+					<span>关于我们帮助中心</span>
+					<span>联系我们</span>
+					<span>招聘信息</span>
+					<span>授权信息</span>
+					<span>网站条款</span>
+				</div>
+				<div>
+					<span>版权声明</span>
+					<span>津ICP备13002056号-2 天津市武清公安分局注:此网站版权属于汉华易美（天津）图像技术有限公司</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<button class="btn-danger fanhui">返回</button>-->
+	<div class="fanhui">
+		<img src="../source/img/主页图片/icon-gotop.svg" alt="" />
+	</div>
+	</body>
+	<script type="text/javascript " src="../public/js/jquery-3.2.1.min.js "></script>
+	<script type="text/javascript " src="../public/js/bootstrap.min.js "></script>
+	<script type="text/javascript " src="../public/js/swiper.min.js "></script>
+	<script type="text/javascript " src="js/index.js "></script>
+	
+
+</html>

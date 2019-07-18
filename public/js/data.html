@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var picture = [{
+			imgurl:'../source/img/主页图片/3.4.jpg',
+			name:'生活'
+		},{
+			imgurl:'../source/img/主页图片/3.6.jpg',
+			name:'城市风光'
+		},{
+			imgurl:'../source/img/主页图片/3.7.jpg',
+			name:'自然风光'
+		},{
+			imgurl:'../source/img/主页图片/3.8.jpg',
+			name:'色彩'
+		}];
+		console.log(picture);
+		var photo = JSON.stringify(picture);
+		console.log(photo);
+		localStorage.setItem('photos',photo)
+		//存储用户名
+		var user = [{
+			phoneName:'18312345678',
+			mima:'C123456'
+		}];
+		var user1 = JSON.stringify(user);
+		localStorage.setItem('userMessage',user1);
+		//登录用户
+		localStorage.setItem('Login','');
+		
+	</script>
+</html>

@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container-fluid1{
+	margin-left: 15%;
+}
+.navbar .nav>li>a.active {
+    color: #e71828;
+}
+ .navbar .nav > li .dropdown-menu {  
+        margin: 0;  
+    }  
+    .navbar .nav > li:hover{  
+        background: black;
+    }  
+    .navbar .nav > li:hover a{  
+       color: white;
+       
+    } 
+    .navbar .nav > li a{ 
+    		height: 66px; 
+       line-height: 36px; 
+    	}
+    .navbar .nav > li:hover .dropdown-menu {  
+        display: block;  
+        background: black;
+        width: 100%;
+        text-align: center;
+    }  
+   .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover  {  
+        background: red;
+    }
+    .dropdown-menu>li>a{
+    		font-size: 0.5em;
+    } 
+    .navbar-brand{
+    margin: 0px 15px;
+    margin-top: 4px;
+    display: inline-block;
+    height: 50px;
+    width: 115px;
+    background: url(../../source/img/主页图片/icon-shijue.svg) no-repeat center;
+} 
+/*导航栏右半部分设置*/
+.navbar-right a{
+	line-height: 30px;
+}
+.navbar-form{
+	margin-top: 15px;
+}
+/*轮播图样式*/
+.swiper-container{
+	margin-top: 50px;
+}
+.img1{
+	position: relative;
+}
+.mask{
+	width: 100%;
+	height: 50px;
+	background: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0.3;
+}
+.img1>span{
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	color: white;
+	font-size: 26px;
+	line-height: 50px;
+}
+/*介绍内容*/
+.container2{
+	margin-top: 50px;
+}
+.introduce>div{
+	display: none;
+	background: rgb(43,43,43);
+}
+.introduce>div h5{
+	color: white;
+}
+.introduce>div p{
+	color: rgb(137,137,137);
+}
+.introduce>.on{
+	display: block;
+}
+/*图片展示*/
+.container3>div>div>img{
+	width: 260px;
+}
+.container3>div>div{
+	vertical-align: middle;
+	position: relative;
+	margin-top: 20px;
+}
+.container3>div>div>p{
+	position: absolute;
+	left: 14px;
+	bottom: -12px;
+	opacity: 0;
+	color: white;
+}
+.container3>div>div:hover p{
+	opacity: 1;
+	left: 130px;
+	transition: 2s;
+}
+/*脚部*/
+.foot{
+	margin-top: 50px;
+	width: 100%;
+	background: rgb(38,38,38);
+}
+/*上*/
+.topbox{
+	border-bottom: 1px solid black;
+}
+.container4>.row>div{
+	display: inline-block;
+	/*border: 1px solid red;*/
+	text-align: center;
+	color: gray;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.container4>.row>div>div:hover{
+	color: white;
+	cursor: pointer;
+}
+.bottombox{
+	color: gray;
+}
+.bottombox div>span{
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid gray;
+}
+.bottombox div>span:hover{
+	color: white;
+	cursor: pointer;
+}
+.footimg2{
+	width: 25px;
+}
+.weixin{
+	position: absolute;
+	top: 0;
+	left: 34px;
+	display: none;
+}
+.wx{
+	position: relative;
+}
+.wx:hover .weixinbox{
+	display: none;
+}
+.wx:hover .weixin{
+	display: block;
+	background: black;
+}
+/*返回按钮的样式*/
+.fanhui{
+	display: none;
+	
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+/*.weixinbox:hover{
+	opacity: 1;
+}*/
+/*.weixinbox:hover .weixin{
+	display: block;
+}*/
+/*.container4>.row div div{
+	display: block;
+}     */

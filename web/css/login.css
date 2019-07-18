@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/*大背景图设置*/
+body{
+	height: 100%;
+	width: 100%;
+	background:url(../../source/img/登录图片/reg-bg.jpg) ;
+	background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100%;
+    min-width: 100%;
+    background-position: 50%;
+    position: absolute;
+}
+.loginbox{
+	width: 364px;
+	height: 403px;
+	/*border: 1px solid red;*/
+	margin: 10% auto;
+	background: white;
+	/*font-size: 0;*/
+	position: relative;
+	box-shadow: 0 0  16px skyblue;
+}
+.denglu{
+	width: 181px;
+	height: 40px;
+	color: black;
+	font-size: 20px;
+	background: gray;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+}
+.zhuce{
+	width: 181px;
+	height: 40px;
+	color: black;
+	font-size: 20px;
+	background: white;
+	float: right;
+	text-align: center;
+	line-height: 40px;
+}
+/*logo*/
+.logo{
+	width: 100px;
+	margin-top: 20px;
+	margin-left: 125px;
+}
+/*登录内容*/
+.dlbox{
+	margin-top: 30px;
+	/*border-top: 1px solid red;*/
+	width: 100%;
+	height: 240px;
+	/*border-bottom: 1px solid red;*/
+}
+.name,.psw{
+	width: 260px;
+	height: 40px;
+	font-size: 16px;
+	margin-top: 15px;
+}
+.tishi{
+	width: 260px;
+    height: 30px;
+   /* border: 1px solid red;*/
+    margin-top: 15px;
+    line-height: 30px;
+    color: red;
+}
+.dlbox button{
+	width: 260px;
+	height: 40px;
+	background: red;
+	margin-top: 15px;
+	font-size: 16px;
+	display: block;
+	margin-bottom: 20px;
+}
+#check{
+	width: 22px;
+    height: 22px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.label1{
+	font-size: 12px;
+	
+}
+.dlbox a{
+	margin-left: 126px;
+	font-size: 12px;
+}
+.zc1,.zc2,.zc3{
+	width: 260px;
+	height: 40px;
+	font-size: 16px;
+	margin-top: 15px;
+}
+/*注册页面*/
+.zcbox{
+	position: absolute;
+	padding-top: 30px;
+	top: 117px;
+	left: 0;
+	display: none;
+	background: white;
+}
+.zc2{
+	font-size: 12px;
+}
+.zcbox button{
+	width: 260px;
+	height: 40px;
+	background: gray;
+	margin-top: 15px;
+	font-size: 16px;
+	display: block;
+	margin-bottom: 20px;
+}
+#zccheck{
+	width: 22px;
+    height: 22px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.zcbox a{
+	margin-left: 126px;
+	font-size: 12px;
+}
+.xianshimima{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: red;
+	position: absolute;
+	top: 110px;
+	right: 66px;
+}
